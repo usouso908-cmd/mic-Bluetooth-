@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Microfone Bluetooth</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="celular">
+
+        <h1>🎤 Microfone</h1>
+
+        <div id="status">
+            Desligado
+        </div>
+
+        <div class="microfone">
+            🎙️
+        </div>
+
+        <button id="power" onclick="ligarDesligar()">
+            ⏻
+        </button>
+
+        <button id="microfoneBtn" onclick="ativarMicrofone()">
+            🎤 Ativar microfone
+        </button>
+
+        <div class="volume">
+
+            <span>🔊</span>
+
+            <input
+                type="range"
+                id="volume"
+                min="0"
+                max="1"
+                step="0.01"
+                value="1"
+            >
+
+        </div>
+
+        <p id="bluetooth">
+            🔵 Conecte seu dispositivo Bluetooth pelo celular.
+        </p>
+
+        <audio id="audio" autoplay></audio>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
